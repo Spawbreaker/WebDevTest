@@ -1,0 +1,32 @@
+:root {
+  --palleteBlack: #0a100d;
+  --palleteWhiteOne: #b9baa3;
+  --palleteWhiteTwo: #d6d5c9;
+  --palleteRedOne: #a22c29;
+  --palleteRedTwo: #902923;
+}
+
+.body{
+    color: var(--palleteBlack);
+}
+
+.container {
+    max-width: 720px;
+    background-color: var(--palleteWhiteTwo);
+    padding-bottom: 25px;
+
+}
+
+.timerContainer{
+    width: 100%;
+}
+
+.timerLabel{
+    font-weight: 600;
+}
+
+.timerBar{
+    height: 100px !important;
+    font-size: 80px !important;
+    margin-bottom: 10px;
+}

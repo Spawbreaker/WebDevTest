@@ -1,0 +1,66 @@
+:root {
+  --palleteBlack: #0a100d;
+  --palleteWhiteOne: #b9baa3;
+  --palleteWhiteTwo: #d6d5c9;
+  --palleteRedOne: #a22c29;
+  --palleteRedTwo: #902923;
+}
+
+@media all and (min-width: 480px) {
+  .Login {
+    padding: 60px 0;
+  }
+
+  .Login form {
+    margin: 0 auto;
+    max-width: 450px;
+    border: solid 4px var(--palleteWhiteTwo);
+  }
+}
+
+.Login form {
+  background-color: var(--palleteWhiteOne);
+}
+
+body {
+  /* background-color: var(--palleteRedOne); */
+  font: var(--palleteBlack);
+  text-align: center;
+}
+
+.LoginBtn {
+  background-color: var(--palleteWhiteOne) !important;
+  border: solid 4px var(--palleteRedTwo) !important;
+  font: var(--palleteBlack) !important;
+}
+
+.btn :hover {
+  background-color: var(--palleteRedTwo) !important;
+}
+
+.form_control:focus {
+  border-color: var(--palleteRedOne) !important;
+}
+
+.Banner{
+  margin: 0 auto;
+  /* width: 100%; */
+  max-width: 450px;
+  /* background: url('../img/red-panda.jpg'); */
+  /* background-size: fill; */
+  
+}
+
+.Banner h1{
+  font-size: 10rem;
+  margin-top: -10rem;
+  margin-bottom: -2rem;
+  color: var(--palleteWhiteTwo);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* display: none; */
+  background: none;
+}
+
+img{
+  width: 100%;
+}

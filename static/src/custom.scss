@@ -1,0 +1,15 @@
+$body-bg: #902923;
+// :root {
+//   --palleteBlack: #0a100d;
+//   --palleteWhiteOne: #b9baa3;
+//   --palleteWhiteTwo: #d6d5c9;
+//   --palleteRedOne: #a22c29;
+//   --palleteRedTwo: #902923;
+// }
+$theme-colors :(
+  "primary":#a22c29, 
+  "secondary":#b9baa3,
+  "danger":#d6d5c9
+  );
+  
+  @import "~bootstrap/scss/bootstrap.scss";

@@ -1,4 +1,4 @@
-import app.user.service as S
+from app.user.service import Service as S
 from app.user.schema import UserSchema
 
 from app.repository.mongo import MongoRepository 
@@ -14,18 +14,18 @@ if __name__ == "__main__":
     print(s)
 
 
-    mr = MongoRepository()
-    data = mr.db.users.find_one({'name':'bear'})    
-    print(data)
-    data = UserSchema(exclude=['_id']).dump(data).data    
-    print(data)
-    newData = data
-    newData['id'] = '123'
-    print(newData)
+    # mr = MongoRepository()
+    # data = mr.db.users.find_one({'name':'bear'})    
     # print(data)
-    # data = S.Service('bear').find_all_users()
+    # data = UserSchema(exclude=['_id']).dump(data).data    
+    # print(data)
+    # newData = data
+    # newData['id'] = '123'
+    # print(newData)
+    
+    data = S().find_user('bear')
+    print(data)
     # # data = S.Service('bear').find_user()
-    # print(data)
     # data = mr.db.users.find_one({'name':'superBear'})    
     # data = UserSchema(exclude=['_id']).dump(data).data
     # print(data)

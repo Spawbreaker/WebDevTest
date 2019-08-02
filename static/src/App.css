@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+* {
+  border: 0px;
+  padding: 0px;
+  color: var(--palleteBlack);
+}
+
+:root {
+  --palleteBlack: #0a100d;
+  --palleteWhiteOne: #b9baa3;
+  --palleteWhiteTwo: #d6d5c9;
+  --palleteRedOne: #a22c29;
+  --palleteRedTwo: #902923;
+}
+
+.InfoLabel {
+  margin: 1px;
+  font-size: 1.5rem;
+  /* float: left; */
+  /* display: block; */
+}
+
+.Center {
+  background: var(--palleteRedOne);
+  height: 100vh;
+  position: absolute 0 0;
+  padding-top: 100px;
+}
+
+.LoginBox {
+  margin: 0px auto;
+  width: 50vw;
+  height: 50vh;
+  background: var(--palleteWhiteOne);
+}
+
+.textBox {
+  margin: 0px auto;
+  display: block;
+  width: 100%;
+  height: 1.75rem;
+  font-size: 1.5rem;
+  /* float: none; */
+}
+
+.submitBtn {
+  background-color: var(--palleteRedTwo);
+  border: none;
+  color: var(--palleteWhiteTwo);
+  display: block;
+  margin: 20px auto;
+  font-size: 2rem;
+  border-radius: 10%;
+  border: var(--palleteBlack) 5px solid;
+  font-family: "Times New Roman", Times, serif;
+  box-shadow: 0 0 1 black;
+}
+
+.submitBtn:hover {
+  background-color: var(--palleteRedOne);
+  border-color: var(--palleteWhiteTwo);
+  color: var(--palleteBlack);
+  transition: linear 0.3s 0s;
+}
