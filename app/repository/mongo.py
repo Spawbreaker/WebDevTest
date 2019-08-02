@@ -2,8 +2,6 @@ import os
 from pymongo import MongoClient
 from urllib.parse import quote_plus
 
-COLLECTION_NAME = 'users'
-
 
 class MongoBase:
     def __init__(self):
@@ -16,19 +14,19 @@ class MongoBase:
         self.db = MongoClient(mongo_url).webproject
 
     def find_all(self, table, selector):
-        return self.db.[table].find(selector)
+        return self.db[table].find(selector)
 
-    def find(self, table, selector):
-        return self.db.[table].find_one(selector)
+    def find(self, table, selector):        
+        return self.db[table].find_one(selector)
 
     def create(self, table, user):
-        return self.db.[table].insert_one(user)
+        return self.db[table].insert_one(user)
         
     def update(self, table, selector, user):
-        return self.db.[table].replace_one(selector, user).modified_count
+        return self.db[table].replace_one(selector, user).modified_count
 
     def delete(self, table, selector):
-            return self.db.[table].delete_one(selector).deleted_count
+            return self.db[table].delete_one(selector).deleted_count
 
 
 class MongoRepository:
