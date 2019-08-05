@@ -30,3 +30,11 @@
     font-size: 80px !important;
     margin-bottom: 10px;
 }
+
+.idTextbox{
+    text-align: center !important;
+}
+
+.hidden{
+    display: none !important;
+}
